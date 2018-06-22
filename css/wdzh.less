@@ -1,0 +1,104 @@
+html {
+  font-size: 100px;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: #F3F5F4;
+}
+.mainBox {
+
+  .header {
+    background: #fff;
+    position: fixed;
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    top: 0;
+    z-index: 22222;
+    border-bottom: 1px solid #F3F5F4;
+    .header_item{
+      height: .88rem;
+      background: #e32322;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      .header-span{
+        width: 1.4rem;
+        height: .34rem;
+        color: RGBA(255, 255, 255, 1);
+        font-size: .3rem;
+      }
+      .header-img{
+        width: .23rem;
+        height: .25rem;
+        margin-left: .24rem;
+      }
+    }
+    .headerBanner{
+      width: 100%;
+      max-width: 640px;
+      background: #fd7d26;
+      height: 3.07rem;
+      font-size: .28rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      color: #fff;
+      .div1{
+        padding: .3rem;
+      }
+      .div2{
+        padding: .5rem;
+        font-size: .6rem;
+      }
+    }
+    .bannerFooter{
+      height: .85rem;
+      background: #fc9751;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      color: #fff;
+      font-size: .25rem;
+      .bannerFooter_s1{
+        width: .8rem;
+        height: .5rem;
+        text-align: center;
+        line-height: .5rem;
+        border-right: 1px solid #fff;
+        padding-right: 1.55rem;
+        color: #fff;
+      }
+      .bannerFooter_s2{
+        color: #fff;
+        height: .5rem;
+        text-align: center;
+        line-height: .5rem;
+      }
+    }
+    .bannerFooter_item{
+      display: flex;
+      flex-direction: column;
+      color: #333333c4;
+      font-size: .15rem;
+      .item_left{
+        height: .49rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: stretch;
+        align-items: center;
+        color: #333;
+        img{
+          border-style: none;
+          width: .25rem;
+          height: .25rem;
+          padding-left: .15rem;
+        }
+      }
+    }
+  }
+}

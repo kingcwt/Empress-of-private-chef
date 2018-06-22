@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet/less" href="../css/mine.less">
+    <link rel="stylesheet" href="../css/reset.min.css">
+</head>
+<script src='../js/less-2.5.3.min.js'></script>
+<script>
+    ~function () {
+        let winW = document.documentElement.clientWidth,
+            desW = 640;
+        winW < desW ? document.documentElement.style.fontSize = winW / desW * 100 + 'px' : null;
+    }()
+</script>
+<body>
+<div class="mainBox">
+    <section class="headerBox">
+        <section class="header">
+            <a href="../home/home.html"><img class="header-img" src="../image/jiantou.png" alt=""></a>
+            <span class="header-span" style="margin: 0 auto">我的主页</span>
+        </section>
+        <div class="headerBox-two">
+           <div class="headerLeft">
+               <span>张学友</span>
+               <button class="dailishang">代理商</button>
+           </div>
+            <div class="headerRight">
+                <img  class="headerRight-img" src="../image/barCode.jpg" alt="">
+                <span>注册代理二微码</span>
+            </div>
+        </div>
+    </section>
+    <section class="bodyBox">
+        <div class="bodyBox-one">我的订单</div>
+        <div class="bodyBox-two">
+            <a href="../mine-quanbu/quanbu.html">
+                <img src="../image/uc_all.png" alt="">
+                <p>全部</p>
+            </a>
+            <a href="../mine-quanbu/quanbu.html">
+                <img src="../image/uc_dfk.png" alt="">
+                <p>待支付</p>
+            </a>
+            <a href="../mine-quanbu/quanbu.html">
+                <img src="../image/uc_dfh.png" alt="">
+                <p>待发货</p>
+            </a>
+            <a href="../mine-quanbu/quanbu.html">
+                <img src="../image/uc_dsh.png" alt="">
+                <p>待收货</p>
+            </a>
+            <a href="../mine-quanbu/quanbu.html">
+                <img src="../image/uc_finished.png" alt="">
+                <p>已收货</p>
+            </a>
+        </div>
+    </section>
+    <section class="footerBox">
+        <a href="../mine-xjdl/xjdl.html">
+            <img src="../image/uc_xjdl.png" alt="">
+            <p>下级代理</p>
+        </a>
+        <a href="../mine-tjdl/tjdl.html">
+            <img src="../image/uc_tjdl.png  " alt="">
+            <p>添加代理</p>
+        </a>
+        <a href="../mine-dlsh/dlsh.html">
+            <img src="../image/uc_dlsh.png" alt="">
+            <p>代理审核</p>
+        </a>
+        <a href="../mine-wdzh/wdzh.html">
+            <img src="../image/uc_myAccount.png" alt="">
+            <p>我的账户</p>
+        </a>
+        <a href="../mine-shdz/shdz.html">
+            <img src="../image/uc_shdz.png" alt="">
+            <p>收货地址</p>
+        </a>
+        <a href="../mine-lsjj/lsjj.html">
+            <img src="../image/uc_lsjj.png" alt="">
+            <p>历史奖金</p>
+        </a>
+        <a href="../mine-kf/kf.html">
+            <img src="../image/uc_dlkh.png" alt="">
+            <p>代理客服</p>
+        </a>
+        <a href="../mine-dlkt/dlkt.html">
+            <img src="../image/uc_dlkh.png" alt="">
+            <p>代理课堂</p>
+        </a>
+    </section>
+</div>
+<section class="home-footer">
+    <a href="../home/home.html" class="home-footer-a home-footer-a1">
+        <div>
+            <img class="footer-oneBox-img footer-oneBox-img1" src="../image/shouye.png" data-a="../image/shouye.png"
+                 data-img="../image/shouye-h.png" alt="">
+            <span class="footer-twoBox-span footer-twoBox-span1">首页</span>
+        </div>
+    </a>
+    <a href="../List/List.html" class="home-footer-a home-footer-a2">
+        <div>
+            <img class="footer-oneBox-img footer-oneBox-img2" src="../image/xiadan.png" data-a="../image/xiadan.png"
+                 data-img="../image/xiadan-h.png" alt="">
+            <span class="footer-twoBox-span footer-twoBox-span2">下单</span>
+        </div>
+    </a>
+    <a href="./mine.html" class="home-footer-a home-footer-a3">
+        <div>
+            <img class="footer-oneBox-img  footer-oneBox-img3" src="../image/wode-h.png" data-a="../image/wode.png"
+                 data-img="../image/wode-h.png" alt="">
+            <span class="footer-twoBox-span footer-twoBox-span3">我的</span>
+        </div>
+    </a>
+</section>
+</body>
+</html>
+<script>
+    ~(function () {
+        let Box = document.getElementsByClassName('home-footer')[0];
+        let a = Box.getElementsByTagName('a');
+        let div = Box.getElementsByTagName('div');
+        let img = Box.getElementsByTagName('img');
+        let span = Box.getElementsByTagName('span');
+
+        function changeTab(index) {
+            for (let i = 0; i < a.length; i++) {
+                img[i].src = img[i].getAttribute('data-a');
+                img[index].src = img[index].getAttribute('data-img');
+                span[i].style.color = '#BFBFBF';
+                span[index].style.color = '#131313';
+            }
+        }
+
+        for (let i = 0; i < a.length; i++) {
+            a[i].onclick = function () {
+                changeTab(i)
+            }
+        }
+    })();
+</script>

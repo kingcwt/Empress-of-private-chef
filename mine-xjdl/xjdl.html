@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>15.6</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet/less" href="../css/xjdl.less">
+    <link rel="stylesheet" href="../css/reset.min.css">
+</head>
+<script src='../js/less-2.5.3.min.js'></script>
+<script>
+    ~function () {
+        let winW = document.documentElement.clientWidth,
+            desW = 640;
+        winW < desW ? document.documentElement.style.fontSize = winW / desW * 100 + 'px' : null;
+    }()
+</script>
+<body>
+<div class="mainBox">
+    <section class="header">
+        <section class="header_item">
+            <a href="../mine/mine.html"><img class="header-img" src="../image/jiantou.png" alt=""></a>
+            <span class="header-span" style="margin: 0 auto">我的下级</span>
+        </section>
+        <div class="container">
+            <div class="container_left">
+                <span>总人数</span>
+                <label>0人</label>
+            </div>
+            <div class="container_right">
+                <span>本月新增</span>
+                <label>0人</label>
+            </div>
+        </div>
+        <div class="headerTwo">
+            <input class="headerTwo-inp" type="text" placeholder="输入姓名或电话">
+            <button class="headerTwo-btn">搜索</button>
+        </div>
+    </section>
+</div>
+</body>
+</html>

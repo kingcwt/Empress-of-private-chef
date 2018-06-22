@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet/less" href="../css/dlsh.less">
+    <link rel="stylesheet" href="../css/reset.min.css">
+</head>
+<script src='../js/less-2.5.3.min.js'></script>
+<script>
+    ~function () {
+        let winW = document.documentElement.clientWidth,
+            desW = 640;
+        winW < desW ? document.documentElement.style.fontSize = winW / desW * 100 + 'px' : null;
+    }()
+</script>
+<body>
+<div class="mainBox">
+    <section class="header_item">
+        <a href="../mine/mine.html"><img class="header-img" src="../image/jiantou.png" alt=""></a>
+        <span class="header-span" style="margin: 0 auto">代理审核</span>
+    </section>
+</div>
+</body>
+</html>

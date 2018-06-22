@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet/less" href="../css/tjdl.less">
+    <link rel="stylesheet" href="../css/reset.min.css">
+</head>
+<script src='../js/less-2.5.3.min.js'></script>
+<script>
+    ~function () {
+        let winW = document.documentElement.clientWidth,
+            desW = 640;
+        winW < desW ? document.documentElement.style.fontSize = winW / desW * 100 + 'px' : null;
+    }()
+</script>
+<body>
+<div class="mainBox">
+    <section class="header">
+        <section class="header_item">
+        <a href="../mine/mine.html"><img class="header-img" src="../image/jiantou.png" alt=""></a>
+        <span class="header-span" style="margin: 0 auto">添加代理</span>
+    </section>
+        <section class="bodyBox">
+            <a class="aa a1">
+                <span class="aa-span">推荐人</span>
+                <input class="aa-inp" placeholder="张学友" type="text" disabled style="background: #fff">
+            </a>
+            <a class="aa a2">
+                <span class="aa-span">姓名</span>
+                <input class="aa-inp" type="text" placeholder="请输入真实姓名">
+            </a>
+            <a class="aa a3">
+                <span class="aa-span">手机号</span>
+                <input class="aa-inp" type="text" placeholder="请输入您的账户">
+            </a>
+            <a class="aa a4">
+                <span class="aa-span">图片验证</span>
+                <img src="../image/verify_code.png" alt="" style="position: absolute;right: 0;" >
+                <input class="aa-inp" type="text" placeholder="请填写图片验证">
+            </a>
+            <a class="aa a5">
+                <span class="aa-span">短信验证</span>
+                <button  class="a5_btn">获取验证码</button>
+                <input class="aa-inp" type="text" placeholder="请填写短信验证码">
+            </a>
+            <a class="aa a6">
+                <span class="aa-span">密码</span>
+                <input class="aa-inp" type="text" placeholder="请输入密码">
+            </a>
+            <a class="aa a7">
+                <span class="aa-span">确认密码</span>
+                <input class="aa-inp" type="text" placeholder="请再次输入密码">
+            </a>
+        </section>
+        <div class="headerTwo">
+            <button class="headerTwo-btn">添加</button>
+        </div>
+    </section>
+</div>
+</body>
+</html>
